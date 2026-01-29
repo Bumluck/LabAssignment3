@@ -35,8 +35,10 @@ public class BillCounter : MonoBehaviour
         float roundShifted = Mathf.Round(shifted);
         newTotal = roundShifted / 100;
 
-        Debug.Log(x + " " + denomination);
-
+        if (x > 0)
+        {
+            Debug.Log(x + " " + denomination);
+        }
         return newTotal;
     }
 }
