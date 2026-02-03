@@ -18,7 +18,6 @@ public class Bookstore : MonoBehaviour
         totalProfit -= CalculateShipping(copiesToBuy);
         Debug.Log("Profit: " + totalProfit);
     }
-
     float CalculateWholesale(float price, int copies)
     {
         float wholesale = 0;

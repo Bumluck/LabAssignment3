@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class BillCounter : MonoBehaviour
 {
-    public float total;
+    public int total;
 
     public List<Denominations> denominationsList;
 
     private void Start()
     {
+        if (total < 1)
+        {
+            total = 1;
+            Debug.Log("Invalid entry, setting total to the default of 1...");
+        }
         CounterLoop(total);
     }
 
-    void CounterLoop(float total)
+    void CounterLoop(int total)
     {
         for (int i = 0; i < denominationsList.Count; i++)
         {
@@ -21,19 +26,13 @@ public class BillCounter : MonoBehaviour
         }
     }
 
-
-
-    float PrintAndRemoveMod (float total, float divisor, string denomination)
+    int PrintAndRemoveMod (int total, int divisor, string denomination)
     {
-        float newTotal;
+        int newTotal;
         int x;
 
         x = (int)(total / divisor);
         newTotal = total % divisor;
-
-        float shifted = newTotal * 100;
-        float roundShifted = Mathf.Round(shifted);
-        newTotal = roundShifted / 100;
 
         if (x > 0)
         {

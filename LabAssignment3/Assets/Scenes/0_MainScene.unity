@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469e6502a6cc2c44f893f20b8e0ae012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BillCounter
-  total: 110
+  total: 876
   denominationsList:
   - denomination: 100
     denominationString: hundred(s)
@@ -284,14 +284,6 @@ MonoBehaviour:
     denominationString: five(s)
   - denomination: 1
     denominationString: one(s)
-  - denomination: 0.25
-    denominationString: quarter(s)
-  - denomination: 0.1
-    denominationString: dime(s)
-  - denomination: 0.05
-    denominationString: nickel(s)
-  - denomination: 0.01
-    denominationString: cent(s)
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0

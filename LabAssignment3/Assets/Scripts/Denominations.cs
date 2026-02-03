@@ -3,6 +3,6 @@ using UnityEngine;
 [System.Serializable]
 public class Denominations
 {
-    public float denomination;
+    public int denomination;
     public string denominationString;
 }
